@@ -1,15 +1,18 @@
-## Put comments here that give an overall description of what your
-## functions do
+cacheinverse <- function(x, ...) {
+            #This code will create an inverse of a matrix. 
+            #To run this code issue the command cacheinverse(makeVectorForInverse(x))
+            #Here x is a matrix
+            #You need to have makeVectorForInverse.R sourced prior to running this code
+        m <- x$getinverse()
 
-## Write a short comment describing this function
+        if(!is.null(m)) {
+                message("getting cached data")
+                return(m)
+        }
+        data <- x$get()
 
-makeCacheMatrix <- function(x = matrix()) {
-
+        m <- solve(data)
+        x$setinverse(m)
+        m
 }
 
-
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-}
