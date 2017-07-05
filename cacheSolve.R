@@ -1,7 +1,7 @@
 cacheSolve <- function(x, ...) {
-            #This code will create an inverse of a matrix. 
-            #To run this code issue the command cacheinverse(makeVectorForInverse(x))
-            #Here x is a matrix
+      #This code will create an inverse of a matrix. 
+      #To run this code issue the command cacheinverse(makeVectorForInverse(x))
+       #Here x is a matrix
     
         #get value stored in 
         #the cache 
